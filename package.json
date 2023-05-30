@@ -1,0 +1,56 @@
+{
+  "name": "clickable-detail",
+  "version": "1.0.8",
+  "description": "A clickable Detail component for Raycast that renders JSX and HTML as an SVG with per-component click handlers.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "postinstall": "mkdir -p $INIT_CWD/assets/clickable-detail && cp bin/HTML2b64.scpt $INIT_CWD/assets/clickable-detail/HTML2b64.scpt && cp bin/DetectMouseInput.scpt $INIT_CWD/assets/clickable-detail/DetectMouseInput.scpt",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKaplanOfficial/Clickable-Detail.git"
+  },
+  "keywords": [
+    "raycast",
+    "mac",
+    "macos",
+    "applescript",
+    "jxa",
+    "svg",
+    "dom",
+    "render",
+    "clickable",
+    "component",
+    "script"
+  ],
+  "author": "Stephen Kaplan <skaplanofficial@gmail.com> (http://skaplan.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SKaplanOfficial/Clickable-Detail/issues"
+  },
+  "homepage": "https://github.com/SKaplanOfficial/Clickable-Detail#readme",
+  "dependencies": {
+    "@raycast/api": "^1.52.1",
+    "@raycast/utils": "^1.7.0",
+    "node-fetch": "^3.3.1",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "1.0.5",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "^18.2.4",
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "files": [
+    "lib/",
+    "bin/",
+    "dist/"
+  ]
+}
